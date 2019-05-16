@@ -31,6 +31,7 @@ end
     array_ct = self.split(/[.?!]/).reject { |string| string.empty? }    
    array_ct.length 
     end
+  end
 
 
 
