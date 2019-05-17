@@ -25,11 +25,11 @@ class String
       end
     false  
   end
-end
-
-  def count_sentences 
-   self.split(/\.|\?|\!/).delete_if{|w| w.size < 2 }.size 
-  end
+  
+def count_sentences
+  array_ct = self.split(/[.?!]).reject { |string| string.empty? }
+  array_ct.length
+end  
   
 
 
